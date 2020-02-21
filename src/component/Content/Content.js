@@ -2,7 +2,7 @@ import React from 'react';
 import './Content.css';
 
 
-// height: '170px', width: '250px',
+
 const Content = (props) => {
     return (
         <div>

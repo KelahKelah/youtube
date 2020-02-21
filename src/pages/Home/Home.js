@@ -7,7 +7,7 @@ import './Home.css'
 class Home extends Component {
     
     // USING APPLICATIONDATA OBJECT 
-    
+     
     // STATE
     state = {
         sidebarData: [
@@ -40,12 +40,12 @@ class Home extends Component {
             message: 'new message',
         }
     // OBJECT DISTRUCTURING 
-
+                                                                                                                                                                                                                                                                                                                                    
         const {text, title, time, views, message} = recommendedData ;
             
         return(
             <div>
-                <h1>Youtube</h1> 
+                <h4>Youtube</h4> 
 
                 <div className="flex-container">
                     <div className="flex-item-first">
@@ -146,7 +146,7 @@ class Home extends Component {
                                 </div>
 
 
-                                
+
                     </div>
 
                             

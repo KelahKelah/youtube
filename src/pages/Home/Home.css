@@ -1,11 +1,8 @@
 .flex-container {
     display: flex;
-    /* background-color: aqua; */
-    /* flex-wrap: wrap; */
 }
 .flex-item-first {
     width: 20vw;
-    /* height: 90vh;   */
     margin: auto 3%;
 
 }
@@ -14,13 +11,10 @@
 }
 .flex-container-1 {
     display:flex;
-    /* background-color: brown; */
     flex-wrap: wrap;
 }
 .flex-item-1 {
     width: 20vw;
-    /* height: 29vw; */
     margin: auto;
-    /* background-color: darkblue; */
 
 }
