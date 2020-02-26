@@ -9,15 +9,15 @@ class Sidebar extends Component {
             // console.log(this)
          return(
             <aside>
-                <div style={styleItem}>
+                <div style={styleContainer}>
                     {/* {console.log(this.props.data)} */}
                     {this.props.data.map((d,i)=> {
                         return(
                         <div key={d.i}>
-                            <div>{d.history}</div>
-                            <div>{d.library}</div>
-                            <div>{d.subscription}</div>
-                            <div>{d.trending}</div>
+                            <div style={styleItem}>{d.history}</div>
+                            <div style={styleItem}>{d.library}</div>
+                            <div style={styleItem}>{d.subscription}</div>
+                            <div style={styleItem}>{d.trending}</div>
                         </div>
                         )
                     })
@@ -34,9 +34,13 @@ class Sidebar extends Component {
 // }
 // export default Sidebar;
 
-const styleItem = {
+const styleContainer = {
     height: '120vh',
-    backgroundColor: 'red'
+    backgroundColor: '#fff',
+}
+const styleItem = {
+    borderBottom: '1px inset #d9d9d9',
+    padding: '5%',
 
 }
 export default Sidebar;

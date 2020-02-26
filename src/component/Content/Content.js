@@ -2,7 +2,6 @@ import React from 'react';
 import './Content.css';
 
 
-
 const Content = (props) => {
     return (
         <div>
@@ -12,11 +11,15 @@ const Content = (props) => {
                 <p>{props.message}</p>
                 <i className={props.icon}></i>
             </div>
-            <p>{props.title}</p>
-            <p>{props.views}</p>
 
+
+            <div style={props.changeTextColor}>
+                <p>{props.title}</p>
+            </div>
+            <p>{props.views}</p>
+            {props.changeTextColor}
         </div>
-        
+
     )
 }
 export default Content;
