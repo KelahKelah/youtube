@@ -12,7 +12,6 @@ const Content = (props) => {
                 <i className={props.icon}></i>
             </div>
 
-
             <div style={props.changeTextColor}>
                 <p>{props.title}</p>
             </div>
@@ -22,4 +21,4 @@ const Content = (props) => {
 
     )
 }
-export default Content;
+export default Content; 

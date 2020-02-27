@@ -7,7 +7,7 @@ class Sidebar extends Component {
     
     render() {
             // console.log(this)
-         return(
+         return( 
             <aside>
                 <div style={styleContainer}>
                     {/* {console.log(this.props.data)} */}
