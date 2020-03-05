@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Content from '../../component/Content/Content';
 import Sidebar from '../../component/Sidebar/Sidebar';
-import './Home.css'
+import './Home.css';
 import Header from '../../component/Header/Header';
 import Searchbar from '../../component/Searchbar/Searchbar';
 
@@ -78,8 +78,6 @@ class Home extends Component {
         // const {library, history, subscription, trending,} = this.state.sidebarData
 
         // const {changeTextColor} = this.changeTextColor
-
-
         return(
             <div>
                 <Header />
@@ -97,7 +95,7 @@ class Home extends Component {
                                         {this.state.content.map((c,i)=> {
                                             return(
                                                 <div className="flex-item-1">
-                                                    <div key={i} style={{backgroundColor: '#e6e6e6', borderRadius: '4PX', margin: '4%', color: '#fff', textAlign: 'center',height:'210px' }}>
+                                                    <div key={i} style={{backgroundColor: '#e6e6e6', borderRadius: '4px', margin: '4%', color: '#fff', textAlign: 'center',height:'210px' }}>
                                                         <div>{c.text}</div>
                                                         <div>{c.title}</div>
                                                         <div>{c.time}</div>

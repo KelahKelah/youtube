@@ -1,17 +1,14 @@
-import React, {Component } from 'react';
+import React from 'react';
 import './Sidebar.css';
 // import Proptypes from 'prop-types';
 
 
-class Sidebar extends Component {
-    
-    render() {
-            // console.log(this)
+const Sidebar = ({data})=> {
          return( 
             <aside>
                 <div style={styleContainer}>
                     {/* {console.log(this.props.data)} */}
-                    {this.props.data.map((d,i)=> {
+                    {data.map((d,i)=> {
                         return(
                         <div key={d.i}>
                             <div style={styleItem}>{d.history}</div>
@@ -27,7 +24,6 @@ class Sidebar extends Component {
     
             </aside>
         )
-    }
 }
 // Sidebar.proptypes = {
 //     data: proptypes.array.isRequired
