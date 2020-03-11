@@ -1,12 +1,10 @@
 import React from 'react';
 
-
 const ContentList = ({photos}) => {
     const myContentList = photos.length ? (photos.map((p,i) => {
-        return( <div key={i}>
+        return( <div style={{margin: '2%'}} key={i}>
+                    <img src={p.thumbnailUrl} alt="Photo" className="" style={{width:'330px',height:'300px', padding: '3%'}} />
                     <div>{p.title}</div>
-                    <div>{p.url}</div>
-                    <div>{p.thumbnailUrl}</div>
                 </div>
                 )
     })
@@ -17,9 +15,12 @@ const ContentList = ({photos}) => {
     )
     
     return(
-        <div>
-            <p>{myContentList}</p>
+        <div className="d-flex flex-wrap">
+            {myContentList}
         </div>
     )
+}
+const styleItem = {
+    width:'30vw'
 }
 export default ContentList;
