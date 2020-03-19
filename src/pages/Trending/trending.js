@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
+import Layout from '../../component/layout/layout'
+import { withRouter } from 'react-router-dom';
 
-class Trending extends Component {
-    render() {
+const Trending = (props) => {
+    console.log('my trending', props)
         return(
-            <div>
-
-            </div>
+            <div></div>
         )
-    }
 }
-export default Trending;
+export default Layout(withRouter(Trending));

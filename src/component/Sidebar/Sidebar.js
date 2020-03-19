@@ -1,14 +1,31 @@
 import React from 'react';
 import './Sidebar.css';
+import { Link, NavLink } from 'react-router-dom';
+import {FaHome, FaPooStorm, FaLayerGroup, FaHistory, FaRegImage, FaClock, FaThumbsUp, FaRegCaretSquareRight } from 'react-icons/fa'
+
 // import Proptypes from 'prop-types';
 
-
-const Sidebar = ({data})=> {
+const Sidebar = ()=> {
          return( 
-            <aside>
-                <div style={styleContainer}>
+                <aside>
+                    <ul style={styleContainer} className="text-dark">
+                        {/* <h3> Lets go for a <FaBeer />? </h3> */}
+                        <li><Link style={styleItem1} to="/"><FaHome /> Home</Link></li>
+                        <li><NavLink style={styleItem} to="/trending"> <FaPooStorm /> Trending</NavLink></li>
+                        <li><NavLink style={styleItem} to="/subscription"> <FaLayerGroup /> Subscription</NavLink></li>
+                        <li><NavLink style={styleItem} to="/library"><FaRegCaretSquareRight /> Library</NavLink></li>
+                    </ul>
+                    <ul style={styleContainer} className="text-dark">
+                        <li><NavLink style={styleItem} to="/"><FaRegImage /> Library</NavLink></li>
+                        <li><NavLink style={styleItem} to="/trending"><FaHistory /> history</NavLink></li>
+                        <li><NavLink style={styleItem} to="/subscription"><FaRegCaretSquareRight /> Your videos</NavLink></li>
+                        <li><NavLink style={styleItem} to="/library"><FaClock /> Watch Later</NavLink></li>
+                        <li><NavLink style={styleItem} to="/library"> <FaThumbsUp /> Liked Videos </NavLink></li>
+
+                    </ul>
+                     
                     {/* {console.log(this.props.data)} */}
-                    {data.map((d,i)=> {
+                    {/* {data.map((d,i)=> {
                         return(
                         <div key={i}>
                             <div style={styleItem1}>
@@ -28,23 +45,28 @@ const Sidebar = ({data})=> {
                         )
                     })
 
-                    }
-                </div>
-    
-            </aside>
+                    } */}
+                </aside>    
         )
 }
 const styleContainer = {
-    height: '120vh',
     backgroundColor: '#fff',
+    padding: '5%',
+    borderBottom: '1px inset #ccc',
+
 }
 const styleItem = {
-    // borderBottom: '1px inset #d9d9d9',
+    // padding: '25px',
     padding: '5%',
+    lineHeight: '3.5',
+    color: '#404040',
+
+
 }
 const styleItem1 = {
-    borderBottom: '1px inset #d9d9d9',
-}
+    padding: '5%',
+    lineHeight: '3.5',
+    color: '#ff471a',}
 
 // Sidebar.proptypes = {
 //     data: proptypes.array.isRequired

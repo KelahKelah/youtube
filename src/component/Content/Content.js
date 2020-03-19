@@ -8,7 +8,7 @@ const Content = ({photos}) => {
     return (
         <div>
             <div>
-                <ContentList style={{}} photos={photos} />
+                <ContentList photos={photos} />
                 {/* <AddList /> */}
             </div>
 

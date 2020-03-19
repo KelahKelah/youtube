@@ -26,9 +26,9 @@ class AddContent extends Component {
             <div>
                 <form onSubmit={this.handleSubmit}>
                     <label>Content Title</label>
-                    <input type="text" onChange={this.handleChange} id="title" />
+                    <input type="text" onChange={this.handleChange} value={this.state.title} id="title" />
                     <label for="img">Add Content</label>
-                    <input type="file" id="url" name="img" accept="image/*" />
+                    <input type="file" id="url" name="img" vaue={} accept="image/*" />
                     <input type="submit" /> 
                 </form>
             </div>
