@@ -17,8 +17,11 @@ class Home extends Component {
     componentDidMount() {
         axios.get('https://jsonplaceholder.typicode.com/photos')
         .then( res => {
-            this.setState({photos: res.data.slice(0,5)})
+            this.setState({photos: res.data.slice(0,3)})
         } )
+        .catch(function (error) {
+            console.log(error);
+         })
     }
     componentDidUpdate() {
     }

@@ -1,3 +1,10 @@
-.aside {
+p:hover {
+    background-color: #e6e6e6;
     
+}
+p:active {
+    color: #ccc;
+  }
+p {
+    margin-bottom: 0rem !important ;
 }

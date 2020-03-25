@@ -15,9 +15,13 @@ const Library = () => {
                 setPhoto({photo: res.data.slice(1,4)})
                 // console.log("Log this", res)
             } else {
-                // console.log()
+                console.log()
             }
         })
+        .catch(function(error) {
+            console.log(error)
+        })
+        
     },           
     [])
        

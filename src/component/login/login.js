@@ -1,18 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import Axios from 'axios';
 
 const Login = (props) => {
-    const[username, setUsername] = useState('')
-    const[password, setPassword] = useState('')
-    const[error, setError] = useState(false)
+    const[username, setInputs] = useState({});
+    const[message, setMessage] = useState({success: {message: '', type: false}, error: {message: '', type: false} });
     const [isLoggedIn, setLoggedIn] = useState(false);
 
 
     const handleUsernameChange = (e) => {
-        setUsername({username:e.target.value})
+        setUsername({username: e.target.value});
     }
     const handlePasswordChange = (e) => {
-        setPassword({password:e.target.value})
+        setPassword({password: e.target.value});
     }
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -20,33 +19,26 @@ const Login = (props) => {
             username: username.username,
             password: password.password
         }
-        axios.post('http://learnable.genesystechhub.com/admin/login', payload)
+
+        Axios.post('https://learnable.genesystechhub.com/admin/login')
         .then(res => {
             if(res.status === 200) {
-                setUsername({username: ''});
-                setPassword({password: ''});
+                setInputs({});
+                setMessage({successs: { type: true} });
                 setTimeout(() => {
-                    props.history.push('/');
+                    props.history.push('/home');
                 }, 2000)
             } else {
-                setError(false)
+                setMessage({error:{ type: false} });
             }
-        }
-            
-            )
+        }) 
+        .catch(error => {
+            console.log(error)
+        })
+
         
     }
-    // useEffect(()=> {
-    //     axios.post('/login', {
-    //         firstName: 'Kele',
-    //         lastName: 'Password'
-    //       })
-    //       .then((res) => {
-    //         console.log(res);
-    //       }, (error) => {
-    //         console.log(error);
-    //       });
-    // })
+    
     return(
         <div>
             <form onSubmit={handleSubmit}>

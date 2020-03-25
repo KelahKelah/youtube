@@ -2,7 +2,6 @@ import React from 'react';
 import Sidebar from '../Sidebar/Sidebar';
 import Header from '../Header/Header';
 
-
 const Layout = (Component) => (props) => {
     return (
         <div>
@@ -21,5 +20,4 @@ const Layout = (Component) => (props) => {
          </div>
     )
 }       
-
 export default (Layout);

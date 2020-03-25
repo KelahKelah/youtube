@@ -2,7 +2,6 @@ import React from 'react';
 import './Content.css';
 import ContentList from './contentList';
 
-
 const Content = ({photos}) => {
 
     return (
