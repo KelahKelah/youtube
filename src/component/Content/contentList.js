@@ -1,25 +1,27 @@
 import React from 'react';
-
+import './Content.css';
 
 const ContentList = ({photos}) => {
     const myContentList = photos.length ? (photos.map((p,i) => {
-        return( <div key={i}>
+        return( <div style={{margin: '1%', padding: '2%'}} key={i}>
+                    <img src={p.thumbnailUrl} alt="Photo" className="" style={{width:'315px',height:'180px', padding: '2%'}} />
                     <div>{p.title}</div>
-                    <div>{p.url}</div>
-                    <div>{p.thumbnailUrl}</div>
                 </div>
                 )
     })
     ) : (
         <div>
-            <p>You have no content to display!</p>
+            <p style={{textAlign:'center'}}>You have no content to display!</p>
         </div>
     )
     
     return(
-        <div>
-            <p>{myContentList}</p>
+        <div className={'wrapper d-flex'}>
+            {myContentList}
         </div>
     )
 }
+// const styleItem = {
+//     width:'30vw'
+// }
 export default ContentList;
