@@ -30,6 +30,7 @@ const Login = (props) => {
                 }, 2000)
             } else {
                 setMessage({error:{ type: false} });
+                console.log('yes erro',error)
             }
         }) 
         .catch(error => {

@@ -1,7 +1,11 @@
 .contain {
-    height: 56px;
+    height: 90px;
     padding: 16px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+header {
+    position: fixed;
+    top: 0;
 }
