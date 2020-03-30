@@ -1,7 +1,7 @@
 import React from 'react';
 import './Sidebar.css';
 import { Link, NavLink } from 'react-router-dom';
-import {FaHome, FaPooStorm, FaLayerGroup, FaHistory, FaRegImage, FaClock, FaThumbsUp, FaRegCaretSquareRight } from 'react-icons/fa'
+import {FaHome, FaPooStorm, FaLayerGroup, FaHistory, FaClock, FaThumbsUp, FaRegCaretSquareRight } from 'react-icons/fa'
 
 // import Proptypes from 'prop-types';
 
@@ -9,7 +9,6 @@ const Sidebar = ()=> {
          return( 
                 <aside>
                         <ul style={styleContainer} className="text-dark">
-                            {/* <h3> Lets go for a <FaBeer />? </h3> */}
                             <p><Link style={styleItem1} to="/"><FaHome style={{margin: '0px 20px', fontSize: '1.4em', color: '#606060'}} /> Home</Link></p>
                             <p><NavLink style={styleItem} to="/trending"> <FaPooStorm style={{margin: '0px 20px', fontSize: '1.4em', color: '#606060'}} /> Trending</NavLink></p>
                             <p><NavLink style={styleItem} to="/subscription"> <FaLayerGroup style={{margin: '0px 20px', fontSize: '1.4em', color: '#606060'}}/> Subscription</NavLink></p>

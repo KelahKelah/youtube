@@ -41,7 +41,7 @@ const Login = (props) => {
     }
     
     return(
-        <div>
+        <>
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
                     <lable>Username</lable>
@@ -56,7 +56,7 @@ const Login = (props) => {
                 </div>
             </form>
 
-        </div>
+        </>
     )
 
 }

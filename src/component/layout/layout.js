@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Sidebar from '../Sidebar/Sidebar';
 import Header from '../Header/Header';
 
 const Layout = (Component) => (props) => {
     return (
-        <div>
+        <Fragment>
             <Header />
             <div className="flex-container pt-5">
                 <div className="row mx-0 my-5">
@@ -17,16 +17,7 @@ const Layout = (Component) => (props) => {
                 </div>
             </div>
             
-         </div>
-        // <div>
-        //     <Header />
-        //     <div className='main-wrap d-flex'>
-        //         <Sidebar style={{width:'25%'}}/>
-        //         <Component style={{width:'65%'}} />
-        //     </div>
-
-        // </div>
-        
+         </Fragment>
     )
 }       
 export default (Layout);

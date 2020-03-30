@@ -1,19 +1,20 @@
-import React,{Component} from 'react';
+import React,{ Component } from 'react';
 
 class Logout extends Component {
     constructor(props) {
         super()
         this.state = {
-            logout: 'are you sure you want to logout?'
+            logout: 'Are you sure you want to logout?'
         }
     }
     handleChange() {
-        this.setState({logout:'you have logout'})
+        this.setState({logout:'You are logged out'})
     }
     render() {
         return(
             <div>
-                <input type="submit" onClick={this.handleChange} />
+                <p>{this.state.logout}</p>
+                <button type="submit" value={''} onClick={this.handleChange}>Logout</button>
             </div>
         )
     }

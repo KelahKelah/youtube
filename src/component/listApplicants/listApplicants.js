@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 const ListApplicants = (props) => {
     console.log("groovy", props)
@@ -6,7 +6,24 @@ const ListApplicants = (props) => {
         console.log('checking new ', d)
 
         return ( 
-            <table key={i} style={tableStyle} className={'table table-hover table-bordered'}>
+            <tr kay={i}>
+                <td>{d.fullName}</td>
+                <td>{d.email}</td>
+                <td>{d.phoneNumber}</td>
+                <td>{d.sex}</td>
+                <td>{d.address}</td>
+                <td>{d.dateOfBirth}</td>
+            </tr>
+        )
+    })
+        
+    ) : (
+    <p> No Tables to display</p>
+    )
+
+    return(
+        <Fragment>
+            <table style={tableStyle} className={'table table-hover'}>
                 <thead>
                     <tr>
                         <th>FullName</th>
@@ -18,29 +35,10 @@ const ListApplicants = (props) => {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>{d.fullName}</td>
-                        <td>{d.email}</td>
-                        <td>{d.phoneNumber}</td>
-                        <td>{d.sex}</td>
-                        <td>{d.address}</td>
-                        <td>{d.dateOfBirth}</td>
-                    </tr>
+                    {listApplicants}
                 </tbody>
-            </table> 
-            
-        )
-    })
-        
-    ) : (
-    <p> No lists to display</p>
-    )
-
-    return(
-        <div>
-            {console.log('this one', listApplicants)}
-            {listApplicants}
-        </div>
+            </table>
+        </Fragment>
     )
     
 }  

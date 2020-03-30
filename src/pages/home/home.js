@@ -1,6 +1,5 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 import Content from '../../component/Content/Content';
-// import Sidebar from '../../component/Sidebar/Sidebar';
 import './home.css';
 import Layout from '../../component/layout/layout'
 import axios from 'axios';
@@ -26,13 +25,12 @@ class Home extends Component {
     componentDidUpdate() {
     }
     render() {
-        // const {library, history, subscription, trending,} = this.state.sidebarData
         return(
-            <div>
+            <Fragment>
                 <div className="wrapper"> 
                     <Content photos={this.state.photos} />
                 </div>   
-            </div>
+            </Fragment>
         )
 
 }

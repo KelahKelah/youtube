@@ -1,4 +1,4 @@
-import react,{Component} from 'react';
+import react,{ Component } from 'react';
 
 class AddContent extends Component {
     constructor(props) {
@@ -6,6 +6,7 @@ class AddContent extends Component {
         this.state = {
             title: '',
             url: '',
+            img: 0,
         }
     }
     handleChange(e) {
@@ -23,15 +24,15 @@ class AddContent extends Component {
     }
     render() {
         return(
-            <div>
+            <>
                 <form onSubmit={this.handleSubmit}>
                     <label>Content Title</label>
                     <input type="text" onChange={this.handleChange} value={this.state.title} id="title" />
                     <label for="img">Add Content</label>
-                    <input type="file" id="url" name="img" vaue={} accept="image/*" />
+                    <input type="file" id="url" name="img" vaue={''} onClick={this.state.img} accept="image/*" />
                     <input type="submit" /> 
                 </form>
-            </div>
+            </>
         )
     }
 }
