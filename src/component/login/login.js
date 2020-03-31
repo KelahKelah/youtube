@@ -30,6 +30,7 @@ const Login = (props) => {
                 }, 2000)
             } else {
                 setMessage({error:{ type: false} });
+                console.log('yes erro',error)
             }
         }) 
         .catch(error => {
@@ -40,7 +41,7 @@ const Login = (props) => {
     }
     
     return(
-        <div>
+        <>
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
                     <lable>Username</lable>
@@ -55,7 +56,7 @@ const Login = (props) => {
                 </div>
             </form>
 
-        </div>
+        </>
     )
 
 }

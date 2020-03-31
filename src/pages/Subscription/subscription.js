@@ -33,7 +33,7 @@ useEffect(() => {
             console.log(error);
                 })
 },[])
-    
+
         return(
             <div style={{background:viewMode==="night"?"black": "white"}}>
                 <ListApplicants data={applicants} />

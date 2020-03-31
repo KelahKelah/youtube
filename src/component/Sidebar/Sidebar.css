@@ -8,3 +8,8 @@ p:active {
 p {
     margin-bottom: 0rem !important ;
 }
+aside {
+    position: fixed; 
+    width: 30%;
+    /* left: 0;  */
+}
