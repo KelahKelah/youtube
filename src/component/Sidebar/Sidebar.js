@@ -27,6 +27,7 @@ const styleContainer = {
     backgroundColor: '#fff',
     padding: '0% 5%',
     borderBottom: '1px inset #ccc',
+    color: '',
 
 }
 const styleItem = {
