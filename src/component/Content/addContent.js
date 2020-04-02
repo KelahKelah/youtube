@@ -1,4 +1,8 @@
 import react,{ Component } from 'react';
+// "homepage": "https://github.io/kelahkelah/youtube",
+// "predeploy": "npm run build",
+// "deploy": "gh-pages -d build",
+
 
 class AddContent extends Component {
     constructor(props) {
