@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
 
 const Login = (props) => {
-    const[username, setInputs] = useState({});
-    const[message, setMessage] = useState({success: {message: '', type: false}, error: {message: '', type: false} });
+    const [username, setInputs] = useState({});
+    const [message, setMessage] = useState({success: {message: '', type: false}, error: {message: '', type: false} });
     const [isLoggedIn, setLoggedIn] = useState(false);
 
 

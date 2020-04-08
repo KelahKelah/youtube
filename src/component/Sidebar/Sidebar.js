@@ -2,10 +2,9 @@ import React from 'react';
 import './Sidebar.css';
 import { Link, NavLink } from 'react-router-dom';
 import {FaHome, FaPooStorm, FaLayerGroup, FaHistory, FaClock, FaThumbsUp, FaRegCaretSquareRight } from 'react-icons/fa'
-
 // import Proptypes from 'prop-types';
 
-const Sidebar = ()=> {
+const Sidebar = () => {
          return( 
                 <aside>
                         <ul style={styleContainer} className="text-dark">
