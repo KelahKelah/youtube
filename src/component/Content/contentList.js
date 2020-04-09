@@ -1,27 +1,29 @@
 import React from 'react';
 import './Content.css';
+import Error from '../Error/Error'
 
-const ContentList = ({photos}) => {
+const ContentList = ({photos, error }) => {
     const myContentList = photos.length ? (photos.map((p,i) => {
-        return( <div className="m-3 p-4"key={i}>
-                    <img src={p.url} alt="Photo" style={{width:'315px',height:'180px', padding: '2%'}} />
-                    <div>
-                        <img src={p.thumbnailUrl} alt="Photo" style={{margin: '20px', border: 'solid 1px #f8f8f8', borderRadius: '50%', width: '35px', height: '35px',backgroundColor:'#f8f8f8'}} />
-                        <span style={{lineHeight:'1.5'}}>{p.title}</span>
+        console.log('y ppppppppppppp', p)
+        return( <div key={i} className='px-0 mb-4 mt-3'>
+                    <img src={p.url} alt="Photo" style={{width:'315px',height:'180px'}} />
+                    <div style={{ width:"84%", height:'50%'}}>
+                        <img src={p.thumbnailUrl} alt={p.title} style={{margin: '17px', borderRadius: '50%', width: '35px', height: '35px'}} />
+                        <span style={{lineHeight:'1.0', overflowWrap:'break-word' }}>Ye hsh UJQN SNIEJ  ISOJDEIO QNHAUWE</span>
                     </div>
                 </div>
                 )
     })
-    ) : (
-        <div>
-            <div style={{textAlign:'center'}}>You have no content to display!</div>
-        </div>
+    ) : ( false
+        // <div>
+        //     <div style={{textAlign:'center'}}>You have no content to display!</div>
+        // </div>
     )
-    
-    return(
-        <div className={'d-flex wrap'}>
+     
+    return(!error ?
+        <div className={'d-flex name'}>
             {myContentList}
-        </div>
+        </div> : (<Error />)
     )
 }
 export default ContentList;

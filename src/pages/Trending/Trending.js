@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Layout from '../../component/layout/layout'
+import Layout from '../../component/Layout/Layout'
 import { withRouter } from 'react-router-dom';
 
 const Trending = (props) => {

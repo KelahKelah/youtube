@@ -2,3 +2,9 @@
     /* height: 90vh; */
     /* background-color: aqua; */
 }
+.name {
+    /* background-color: blue; */
+    width: 100%;
+    flex-wrap: wrap;
+
+}

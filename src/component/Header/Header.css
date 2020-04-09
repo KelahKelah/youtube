@@ -1,5 +1,6 @@
 .contain {
-    height: 90px;
+    height: 15vh;
+    width: 100vw;
     padding: 16px;
     display: flex;
     flex-direction: row;

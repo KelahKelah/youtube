@@ -13,3 +13,11 @@ aside {
     width: 30%;
     /* left: 0;  */
 }
+@media (max-width:575px) {
+    aside {
+      background-color: aqua;
+      display: none;
+    }
+  }
+/* @media(max-width:  )  */
+  

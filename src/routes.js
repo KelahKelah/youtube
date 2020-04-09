@@ -1,10 +1,10 @@
 import React from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
-import Home from './pages/home/home';
-import Trending from './pages/Trending/trending';
+import Home from './pages/Home/Home';
+import Trending from './pages/Trending/Trending';
 import Subscription from './pages/Subscription/subscription';
-import Library from './pages/Library/library';
-import Logout from './pages/logout/logout';
+import Library from './pages/Library/Library';
+import Logout from './pages/Logout/Logout';
 
 const Router = () => {
     return(

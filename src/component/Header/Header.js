@@ -6,7 +6,7 @@ import Searchbar from '../Searchbar/Searchbar';
 function Header() {
     return(
         <header className="contain">
-            <i style={headerStyle}><FaAlignJustify style={{color: '#606060', margin:'0px 20px', padding: '8px', width: '40px', height: '40px', font: '13.3px'}} /></i>
+            <i style={headerStyle}><FaAlignJustify style={{color: '#737373', margin:'0px 20px', padding: '8px', width: '40px', height: '40px', font: '10.3px'}} /></i>
             <div className="d-flex" style={{width:'129px', height: '24px', margin: '0px 290px 0px 0px'}}>
                 <i style={headerStyle}><FaYoutube/></i>
                 <h4>Youtube</h4 >

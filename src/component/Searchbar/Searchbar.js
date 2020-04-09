@@ -1,12 +1,30 @@
+// Best practice import order says node modules should come first 
 import React, { useState } from 'react';
+import Axios from 'axios';
 import { FaSistrix } from 'react-icons/fa';
+import './Searchbar.css';
 
 const Searchbar =(props) =>{
     const [searchInput, setSearchInput] = useState({}) ;
     const [isLoading, setIsloading] = useState(false);
 
-    const handleInput = (e) => {
+
+    const handleInputChange = (e) => {
         console.log(e)
+        setSearchInput()
+    }
+    const handleInput = (e) => {
+        e.preventDefault()
+
+        const url = ''
+
+        Axios.get(url)
+        .then(res => {
+            console.log()
+        })
+        .catch((error) => {
+            console.log(error)
+        })
     }
         return(
             <form>

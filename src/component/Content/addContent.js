@@ -1,4 +1,10 @@
 import react,{ Component } from 'react';
+import Axios from 'axios';
+// save githubPages for deployment temporary
+// "homepage": "https://github.io/kelahkelah/youtube",
+// "predeploy": "npm run build",
+// "deploy": "gh-pages -d build",
+
 
 class AddContent extends Component {
     constructor(props) {
@@ -6,7 +12,7 @@ class AddContent extends Component {
         this.state = {
             title: '',
             url: '',
-            img: 0,
+            img: '',
         }
     }
     handleChange(e) {
@@ -14,6 +20,18 @@ class AddContent extends Component {
     }
     handleSubmit(e) {
         e.preventDefault()
+        payload = {
+            title: 'title.title',
+            url: 'url.url',
+            img: 'img.img'
+        }
+        // testing api
+        const url = 'https://jsonplaceholder.typicode.com/photos'
+
+        Axios.post(url)
+        .then(res => {
+            this.setState()
+        })
         if(this.target.title && this.target.url) {
             return(
                 <div >
