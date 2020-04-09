@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './library.css'
-import Layout from '../../component/layout/layout';
+import Layout from '../../component/Layout/Layout';
 import Content from '../../component/Content/Content'
 import Axios from 'axios';
 

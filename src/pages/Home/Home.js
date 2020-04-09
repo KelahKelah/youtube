@@ -1,8 +1,8 @@
 import React, {Component, Fragment} from 'react';
 import axios from 'axios';
 import Content from '../../component/Content/Content';
-import Layout from '../../component/layout/layout';
-import './home.css';
+import Layout from '../../component/Layout/Layout';
+import './Home.css';
 
 
 class Home extends Component {

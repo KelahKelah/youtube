@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Layout from '../../component/layout/layout';
+import Layout from '../../component/Layout/Layout';
 import Axios from 'axios';
-import ListApplicants from '../../component/listApplicants/listApplicants';
+import ListApplicants from '../../component/ListApplicants/ListApplicants';
 
 const Subcription = (props) => {
     const [viewMode, setViewMode] = useState('day');
