@@ -9,7 +9,6 @@ const Content = ({photos, error}) => {
                 <ContentList photos={photos} error={error} />
                 {/* <AddList /> */}
             </div>
-
         </>
     )
 }

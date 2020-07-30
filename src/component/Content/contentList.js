@@ -1,10 +1,10 @@
 import React from 'react';
 import './Content.css';
-import Error from '../Error/Error'
+import Error from '../Error/Error';
 
-const ContentList = ({photos, error }) => {
+const ContentList = (props) => {
+    const {photos, error} = props
     const myContentList = photos.length ? (photos.map((p,i) => {
-        console.log('y ppppppppppppp', p)
         return( <div key={i} className='px-0 mb-4 mt-3'>
                     <img src={p.url} alt="Photo" style={{width:'315px',height:'180px'}} />
                     <div style={{ width:"84%", height:'50%'}}>
