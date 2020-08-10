@@ -3,7 +3,7 @@ import './Content.css';
 import Error from '../Error/Error';
 
 const ContentList = (props) => {
-    const {photos, error} = props
+    const {photos, error, notification } = props
     const myContentList = photos.length ? (photos.map((p,i) => {
         return( <div key={i} className='px-0 mb-4 mt-3'>
                     <img src={p.url} alt="Photo" style={{width:'315px',height:'180px'}} />
@@ -13,11 +13,11 @@ const ContentList = (props) => {
                     </div>
                 </div>
                 )
-    })
-    ) : ( false
-        // <div>
-        //     <div style={{textAlign:'center'}}>You have no content to display!</div>
-        // </div>
+    }) 
+    ) : ( 
+        <div>
+            <div style={{textAlign:'center'}}>You have no content to display!</div>
+        </div>
     )
      
     return(!error ?

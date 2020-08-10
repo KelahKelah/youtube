@@ -34,12 +34,14 @@ const styleItem = {
     padding: '0% 5%',
     lineHeight: '3.5',
     color: '#030303',
+    textDecoration: 'none',
 }
 const styleItem1 = {
     padding: '5%',
     lineHeight: '3.5',
     color: '#ff471a',
-    margin: '20px 0px 0px 0px'
+    margin: '20px 0px 0px 0px',
+    textDecoration: 'none !important'
 
 }
     
