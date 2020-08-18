@@ -1,5 +1,6 @@
 p:hover {
     background-color: #e6e6e6;
+    width: 100%;
     
 }
 p:active {
@@ -13,11 +14,11 @@ aside {
     width: 30%;
     /* left: 0;  */
 }
-@media (max-width:575px) {
+@media (max-width: 769px) {
     aside {
       background-color: aqua;
       display: none;
     }
   }
-/* @media(max-width:  )  */
+
   

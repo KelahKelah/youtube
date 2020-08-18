@@ -1,7 +1,7 @@
 import React from 'react';
 import './Sidebar.css';
 import { Link, NavLink } from 'react-router-dom';
-import {FaHome, FaPooStorm, FaLayerGroup, FaHistory, FaClock, FaThumbsUp, FaRegCaretSquareRight } from 'react-icons/fa'
+import {FaHome, FaPooStorm, FaLayerGroup, FaHistory, FaClock, FaThumbsUp, FaRegCaretSquareRight, FaPiggyBank } from 'react-icons/fa'
 // import Proptypes from 'prop-types';
 
 const Sidebar = () => {
@@ -18,6 +18,11 @@ const Sidebar = () => {
                             <p><NavLink style={styleItem} to="/subscription"><FaRegCaretSquareRight style={{margin: '0px 20px', fontSize: '1.4em', color: '#606060'}} /> Your videos</NavLink></p>
                             <p><NavLink style={styleItem} to="/library"><FaClock style={{margin: '0px 20px', fontSize: '1.4em', color: '#606060'}} /> Watch Later</NavLink></p>
                             <p><NavLink style={styleItem} to="/library"> <FaThumbsUp style={{margin: '0px 20px', fontSize: '1.4em', color: '#606060'}} /> Liked Videos </NavLink></p>
+                        </ul>   
+                        <ul style={styleContainer} className="text-dark"> <span>SUBSCRIPTIONS</span>
+                            <p><NavLink style={styleItem} to="/library"><FaRegCaretSquareRight style={{margin: '0px 20px', fontSize: '1.4em', color: '#606060'}} /> Library</NavLink></p>
+                            <p><NavLink style={styleItem} to="/trending"><FaHistory style={{margin: '0px 20px', fontSize: '1.4em', color: '#606060'}} /> History</NavLink></p>
+                            <p><NavLink style={styleItem} to="/subscription"><FaRegCaretSquareRight style={{margin: '0px 20px', fontSize: '1.4em', color: '#606060'}} /> Your videos</NavLink></p>
                         </ul>                     
                 </aside>    
         )
@@ -26,7 +31,8 @@ const styleContainer = {
     backgroundColor: '#fff',
     padding: '0% 5%',
     borderBottom: '1px inset #ccc',
-    color: '',
+    // backgroundColor: 'pink',
+    width: '50%',
 
 }
 const styleItem = {

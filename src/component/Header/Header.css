@@ -1,6 +1,6 @@
 .contain {
     height: 15%;
-    width: 100vw;
+    width: 100%;
     padding: 16px;
     display: flex;
     flex-direction: row;
@@ -10,3 +10,9 @@ header {
     position: fixed;
     top: 0;
 }
+@media (max-width:'769px') {
+    .leftNav {
+        display: none;
+        background-color: thistle;
+    }
+  }

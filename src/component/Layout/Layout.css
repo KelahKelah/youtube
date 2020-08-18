@@ -1,0 +1,18 @@
+
+.sideBarNav {
+    width: 15%px;
+    margin-right: '20px';
+}
+@media screen and (max-width: 769px) {
+    .contentWrap {
+        width: 100%;
+        /* background-color: yellow; */
+    }
+    .mainWrap {
+        margin: auto;
+    }
+    .sideBarNav {
+        margin-right: '0px';
+        width: 0px;
+    }
+}

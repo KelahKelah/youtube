@@ -1,10 +1,18 @@
-.wrapper {
-    /* height: 90vh; */
-    /* background-color: aqua; */
-}
-.name {
-    /* background-color: blue; */
-    width: 100%;
+.content {
+    display: flex; 
     flex-wrap: wrap;
+}
+.contentWrap {
+    /* background-color:yellow; */
+    flex-wrap: wrap;
+    margin-left: 10px;
+    width: 345px;
+}
 
+@media screen and (max-width: 769px) {
+.content {
+    width: 100%;
+    margin: auto;
+    /* background-color: yellow; */
+}
 }

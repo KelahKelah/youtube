@@ -1,4 +1,5 @@
-const data = {
-    id = "001",
-    id = "002"
-};
+const data = [
+    {title : "Web development in 2020"}
+];
+   
+

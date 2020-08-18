@@ -1,6 +1,6 @@
-@media (max-width: 375px) {
+@media screen and (max-width: 769px) {
     form {
-        /* display: none; */
+        display: none;
         background-color: yellow;
     }
 }

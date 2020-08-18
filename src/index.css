@@ -18,10 +18,4 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-@media (min-width:'375px') {
-  aside {
-    background-color: aqua;
-  }
-  
 
-}

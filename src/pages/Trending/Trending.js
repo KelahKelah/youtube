@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import Layout from '../../component/Layout/Layout';
 import { withRouter } from 'react-router-dom';
 import axios from 'axios'
-import ContentList from '../../component/Content/contentList';
+import Content from '../../component/Content/Content';
 
 class Trending extends Component {
     constructor() {
@@ -31,7 +31,7 @@ class Trending extends Component {
         return(
             <Fragment>
                 <div className="wrapper"> 
-                    <ContentList photos={this.state.photos} error={this.state.error} />
+                    <Content photos={this.state.photos} error={this.state.error} />
                 </div>   
             </Fragment>
         )

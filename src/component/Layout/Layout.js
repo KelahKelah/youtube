@@ -5,23 +5,15 @@ import Header from '../Header/Header';
 const Layout = (Component) => (props) => {
     return (
         <Fragment>
-            <Header />
-            <div className='d-flex'>
-                {/* <Sidebar style={{width:'30%', background: 'black'}} />
-                <Component style={{width:'60%'}} /> */}
-            </div>
-            
-            <div className="flex-container pt-5">
-                <div className="row mx-0 my-5">
-                    <div className="col-md-3">
-                        <Sidebar />
-                    </div>
-                    <div className="col-md-9">
-                        <Component />
-                    </div>
+            <Header />     
+            <div className="mainwrap d-flex pt-5 mt-5">
+                <div className = "sideBarNav" style={{width: '15%', marginRight: '20px',}}>
+                    <Sidebar />
                 </div>
-            </div>
-            
+                <div className='contentWrap' style={{width: '90%'}}>
+                    <Component />
+                </div>
+            </div>            
         </Fragment>
     )
 }       
